@@ -5,7 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="./favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -39,9 +40,14 @@
             </div>
         </div>
     </nav>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Upcoming Match!</strong> | BCC MAGAM VS SUPERNOVAS DEVESPORA | Sunday 5th September 2021
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
     <main>
         <!-- HERO START -->
-        <div class="container col-xxl-8 px-4 py-5">
+        
+        <div class="container col-xxl-8 px-4 py-5" >
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="./images/Background@4x.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
@@ -58,6 +64,7 @@
                 </div>
             </div>
         </div>
+    
         <!-- HERO END -->
 
         <div class="container my-1" id="about">
@@ -270,6 +277,10 @@
         <!-- OUR TEAM END -->
 
     </main>
+    <div class="container text-center my-1 py-1">
+        <h2>Become A Sponsor</h2>
+        <form><script src="https://cdn.razorpay.com/static/widget/subscription-button.js" data-subscription_button_id="pl_HrmTdS2nWvaZnJ" data-button_theme="brand-color" async> </script> </form>
+    </div>
     <div class="container my-1" id="contact">
         <div class="row">
             <div class="col-md-6 py-1">
@@ -300,8 +311,6 @@
     <!-- Your Chat plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
-
-   
     <div class="container ">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
@@ -320,27 +329,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
-     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "100781035603608");
-      chatbox.setAttribute("attribution", "biz_inbox");
-
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v11.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "100781035603608");
+            chatbox.setAttribute("attribution", "biz_inbox");
+      
+            window.fbAsyncInit = function() {
+              FB.init({
+                xfbml            : true,
+                version          : 'v11.0'
+              });
+            };
+      
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+          </script>
+       
+          
 
 </body>
 
